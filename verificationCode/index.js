@@ -4,7 +4,7 @@ var nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0",
 ];
 var str = '';
 var verVal = drawCode();
-// 绘制验证码
+// 绘制验证码  canvas绘制
 function drawCode (str) {
     var canvas = document.getElementById("verifyCanvas"); //获取HTML端画布
     var context = canvas.getContext("2d"); //获取画布2D上下文
@@ -17,7 +17,7 @@ function drawCode (str) {
     var y = new Array();
     for (var i = 0; i < 4; i++) {
         rand.push(rand[i]);
-        rand[i] = nums[Math.floor(Math.random() * nums.length)]
+        rand[i] = nums[Math.floor(Math.random() * nums.length)];
         x[i] = i * 20 + 10;
         y[i] = Math.random() * 20 + 20;
         context.fillText(rand[i], x[i], y[i]);

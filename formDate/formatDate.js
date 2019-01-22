@@ -1,4 +1,8 @@
-
+/***
+ * 格式化时间戳
+ * @param now  时间戳
+ * @returns {string}   返回字符串
+ */
 
 function formatDate(now) {
     now = new Date(now);
