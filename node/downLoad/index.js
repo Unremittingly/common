@@ -64,6 +64,7 @@ function downLoads(urls) {
 }
 
 function downLoad(url) {
+    console.log('url',url);
     https.get(url, function(res){
         var imgData = "";
         let urlArr = url.split('/');
@@ -77,7 +78,7 @@ function downLoad(url) {
             // return false;
             fs.writeFile(filePath, imgData, "binary", function(err){
                 if(err){
-                    console.log("down fail");
+                    console.log("down fail",err);
                 }else{
                     console.log("down success");
                 }
