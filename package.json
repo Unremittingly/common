@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "toutiao": "node node/toutiao/index.js",
     "music": "node node/music/index.js",
-    "downImg": "node node/downLoad/index.js"
+    "downImg": "node node/downLoad/index.js",
+    "downFiction": "node node/fiction/index.js"
   },
   "author": "",
   "license": "ISC",
